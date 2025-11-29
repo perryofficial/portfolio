@@ -1,0 +1,245 @@
+@import "tailwindcss";
+
+
+body {
+  background-color: #111827; /* Dark background for the page */
+  color: #e2e8f0; /* Light text */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ensure anchor targets don't hide under fixed navbar (for browsers that don't respect JS offset) */
+:target {
+  scroll-margin-top: 6rem; /* adjust if your navbar is taller/shorter */
+}
+
+
+/* src/styles/global.css */
+
+/* Backgrounds */
+.bg-bgDark {
+  background-color: #111827; /* Dark background */
+}
+
+.bg-bgDarkAlt {
+  background-color: #1f2937; /* Lighter dark background for cards */
+}
+
+.text-textMain {
+  color: #e2e8f0; /* Light text color */
+}
+
+.text-textMuted {
+  color: #cbd5e1; /* Muted text for descriptions */
+}
+
+.bg-accent {
+  background-color: #0ea5e9; /* Blue accent for divider */
+}
+
+/* Card Styling */
+.backdrop-blur-md {
+  backdrop-filter: blur(10px); /* Moderate blur for background */
+}
+
+.shadow-lg {
+  box-shadow: 0px 10px 15px rgba(78, 56, 126, 0.305); /* Shadow for cards */
+}
+
+.w-px {
+  width: 1px; /* Center divider line */
+}
+
+.h-full {
+  height: 100%; /* Full height for the center divider */
+}
+
+/* Spacing */
+.space-y-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Center Divider Styling */
+.border-accent {
+  border-color: #0ea5e9; /* Accent color for divider */
+}
+
+/* Left-Right Flex Alignment */
+.mr-auto {
+  margin-right: auto; /* Align to the left */
+}
+
+.ml-auto {
+  margin-left: auto; /* Align to the right */
+}
+
+
+
+/* src/styles/global.css */
+
+/* Backgrounds */
+.bg-bgDark {
+  background-color: #111827; /* Dark background */
+}
+
+.bg-bgDarkAlt {
+  background-color:  rgba(40, 58, 156, 0.325); /* Lighter dark background for cards */
+}
+
+.text-textMain {
+  color: #e2e8f0; /* Light text color */
+}
+
+.text-textMuted {
+  color: #cbd5e1; /* Muted text for descriptions */
+}
+
+.bg-accent {
+  background-color: #0ea5e9; /* Blue accent for divider */
+}
+
+/* Card Styling */
+.backdrop-blur-md {
+  backdrop-filter: blur(10px); /* Moderate blur for background */
+}
+
+.shadow-lg {
+  box-shadow: 0px 10px 15px  rgba(105, 154, 207, 0.325);; /* Shadow for cards */
+}
+
+.w-px {
+  width: 1px; /* Center divider line */
+}
+
+.h-full {
+  height: 100%; /* Full height for the center divider */
+}
+
+/* Hover Effects */
+.transition-all {
+  transition: all 0.3s ease-in-out;
+}
+
+.hover:scale-105 {
+  transform: scale(1.05);
+}
+
+.hover:shadow-2xl {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Spacing */
+.space-y-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+
+
+
+
+/* for projects section cards *//* TailwindCSS */
+.projects-section {
+  background: #111827; /* Darker background to match the overall page */
+}
+
+.project-card {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  background: rgba(105, 154, 207, 0.325); /* Transparency for blur effect */
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.project-image img {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover img {
+  filter: brightness(0.8);
+}
+
+h3 {
+  color: white;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.technologies span {
+  margin: 5px;
+}
+
+
+
+/* certifications section */
+/* TailwindCSS */
+.certifications-section {
+  background: #111827; /* Darker background to match the overall page */
+}
+
+.certification-card {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  background: rgba(105, 154, 207, 0.325); /* Transparency for blur effect */
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.certification-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.certification-image img {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.certification-card:hover {
+  transform: translateY(-10px);
+  transition: transform 0.3s ease;
+}
+
+.certification-card:hover img {
+  filter: brightness(0.8);
+}
+
+h3 {
+  color: white;
+}
+
+.text-xs {
+  color: #d1d5db;
+}
+
+.certification-card a {
+  color: #4f8a8b;
+}
+
+.certification-card a:hover {
+  color: #35a3a3;
+}
