@@ -14,11 +14,12 @@ const Hero = () => {
 
       <div className="mt-8 flex gap-6">
         <a
-          href="about"  // This will scroll to the About section
+          href="#about"  
           className="border border-accent text-accent px-6 py-3 rounded-full text-sm font-semibold hover:bg-accent hover:text-bgDark transition-colors"
         >
           About Me
         </a>
+        
         <a
           href="/PrajwalNaik_FD9324743092.pdf"
           download
