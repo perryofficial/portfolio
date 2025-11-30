@@ -1,40 +1,35 @@
 // src/App.jsx
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";  // Navbar component
-import Hero from "./components/Hero";      // Hero component
-import About from "./components/About";    // About section
-import EducationSection from "./components/EducationSection";  // Education section
-import ExperienceSection from "./components/ExperienceSection"; // Work Experience section
-import Projects from "./components/Projects";  // Projects section
-import Certifications from "./components/Certifications"; // Certificates section
-import ContactForm from "./components/ContactForm";  // Contact Form section
-import Footer from "./components/Footer";  // Footer component
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import EducationSection from "./components/EducationSection";
+import ExperienceSection from "./components/ExperienceSection";
+import Projects from "./components/Projects";
+import Certifications from "./components/Certifications";
+import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 
 import "font-awesome/css/font-awesome.min.css";
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-bgDark text-textMain">
-        {/* Navbar */}
-        <Navbar />
+    <div className="min-h-screen bg-bgDark text-textMain">
+      
+      <Navbar />
 
-        {/* Page Routes */}
-        <Routes>
-          <Route path="/" element={<Hero />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/education" element={<EducationSection />} />
-          <Route path="/experience" element={<ExperienceSection />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/certifications" element={<Certifications />} />
-          <Route path="/contact" element={<ContactForm />} />
-        </Routes>
+      {/* Single Page Sections */}
+      <section id="home"><Hero /></section>
+      <section id="about"><About /></section>
+      <section id="education"><EducationSection /></section>
+      <section id="experience"><ExperienceSection /></section>
+      <section id="projects"><Projects /></section>
+      <section id="certifications"><Certifications /></section>
+      <section id="contact"><ContactForm /></section>
 
-        {/* Footer */}
-        <Footer />
-      </div>
-    </Router>
+      <Footer />
+
+    </div>
   );
 }
 
